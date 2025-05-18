@@ -1,0 +1,323 @@
+/* General page wrapper */
+.page-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* Cart Container */
+.cart-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+  width: 400px;  /* Make the cart container narrower */
+  max-width: 95vw; /* Responsive on small screens */
+}
+
+
+/* Empty cart message */
+.empty-cart .cart-empty {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  padding: 40px 0;
+}
+
+/* Cart title */
+.cart-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cart Content Flex */
+/* Cart Content - single column vertical layout */
+.cart-content {
+  display: block;
+}
+
+/* Cart items section */
+.cart-items-section {
+  max-height: 350px; /* scroll if too many items */
+  overflow-y: auto;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+/* Cart summary section */
+.cart-summary-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px #eee;
+}
+
+/* Single cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Cart details text */
+.cart-details p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+/* Buttons on cart items */
+.cart-buttons {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Increase (+) Button - Light Blue */
+.btn-increase {
+  background-color: #bbdefb;  /* Light Blue */
+  color: #0d47a1;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-increase:hover {
+  background-color: #90caf9;
+}
+
+/* Decrease (-) Button - Light Orange */
+.btn-decrease {
+  background-color: #ffe0b2;  /* Light Orange */
+  color: #e65100;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-decrease:hover {
+  background-color: #ffcc80;
+}
+
+/* Remove Button - Light Red */
+.btn-remove {
+  background-color: #ffcdd2;  /* Light Red */
+  color: #b71c1c;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-remove:hover {
+  background-color: #ef9a9a;
+}
+
+/* Right side: Cart Summary */
+
+
+/* Total price heading */
+.cart-total h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 10px;
+}
+
+/* Discount buttons */
+.discount-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.discount-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.discount-buttons button:first-child {
+  margin-left: 0;
+}
+
+.discount-buttons button:last-child {
+  margin-right: 0;
+}
+
+.discount-buttons button:hover {
+  background-color: #388e3c;
+}
+
+/* Coupon input and button */
+.apply-coupon-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.apply-coupon-button:hover {
+  background-color: #115293;
+}
+
+input[type='text'],
+input[type='email'] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  width: 60%;
+  margin-top: 8px;
+}
+
+input[type='email'] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Coupon discount display */
+h4 {
+  margin: 10px 0;
+  color: #388e3c;
+  font-weight: 600;
+}
+
+/* Tax and final price */
+p,
+h3 {
+  margin: 10px 0;
+}
+
+/* Email input section */
+.email-section h4 {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Payment method buttons */
+.payment-methods {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.payment-btn {
+  flex: 1;
+  background-color: #bdbdbd;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-btn.selected,
+.payment-btn:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+/* QR Code Section */
+.qr-code-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.qr-code-section h3 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.qr-payment-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #388e3c;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qr-payment-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Complete purchase button */
+.complete-purchase-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #2e7d32;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.complete-purchase-btn:hover {
+  background-color: #145214;
+}
+
+/* Thank You Message Section */
+.thank-you {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #2e7d32;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Confetti canvas styling (if needed) */
+canvas {
+  position: fixed !important;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}

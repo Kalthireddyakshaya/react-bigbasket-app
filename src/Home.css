@@ -1,0 +1,210 @@
+
+
+.home-page {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: black;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* Categories Section */
+.categories-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fdfdfd;
+}
+
+.categories-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.category-card {
+  width: 180px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-card p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-card {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card {
+    width: 100%;
+  }
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 5rem,3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.why-choose-us ul {
+  list-style-type: none;
+  padding: 2 rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.why-choose-us li {
+  margin: 0.5rem 0;
+}
+
+/* Food Items Marquee Section */
+.food-items-marquee {
+  padding: 2rem 0;
+  background-color: black;
+  text-align: center;
+}
+
+.food-items-marquee h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  animation: marquee 30s linear infinite;
+  gap: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-item {
+  text-align: center;
+}
+
+.marquee-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.marquee-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Featured Restaurants Section */
+.restaurants-section {
+  padding: 3rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.restaurants-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.restaurant-card {
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}

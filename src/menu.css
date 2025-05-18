@@ -1,0 +1,62 @@
+/* ===== Reset Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* ===== Compact Horizontal Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between logo and links */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  height: 50px; /* decreased height */
+  box-sizing: border-box;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  color: black;
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+}
+
+/* ===== Navbar Links in one horizontal line ===== */
+.navbar a {
+  font-size: 13px;
+  padding: 6px 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 3px;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+/* ===== Prevent wrapping and keep it horizontal ===== */
+.navbar .icon {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* ===== Push content below navbar ===== */
+.main-content {
+  padding-top: 60px;
+}

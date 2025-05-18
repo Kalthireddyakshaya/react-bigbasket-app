@@ -1,0 +1,84 @@
+
+.about-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings: one color */
+.about-title,
+h3 {
+  color: #2e447d; /* Deep green */
+}
+
+/* Paragraphs and list items: one color */
+.about-description,
+.mission p,
+.team p,
+ul li {
+  color: #444; /* Dark gray */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.mission, .values, .team {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.values li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #4c5caf; /* checkmark color */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .mission, .values, .team {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}
