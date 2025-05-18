@@ -375,7 +375,7 @@
 
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './chocolates.css';
+import './Chocolates.css';
 import { AddToCart } from './store';
 
 function Chocolates() {
