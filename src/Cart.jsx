@@ -7,7 +7,7 @@ import {
   orderDetails,
   RemoveFromCart,
 } from './store';
-import './cart.css';
+import './Cart.css';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import QRCode from 'react-qr-code';

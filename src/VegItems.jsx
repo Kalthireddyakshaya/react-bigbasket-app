@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AddToCart } from './store';
-import './VegItems.css';
+import './vegItems.css';
 
 const priceRanges = [
   { value: 'Rs 1 to Rs 50', min: 1, max: 50 },
